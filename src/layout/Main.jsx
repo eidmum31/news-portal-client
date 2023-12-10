@@ -5,11 +5,12 @@ import { Col, Container, Row } from 'react-bootstrap';
 import LeftNav from '../pages/shared/LeftNav/LeftNav';
 import RightNav from '../pages/shared/RightNav/RightNav';
 import Home from '../pages/Home/Home/Home';
+
 import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
-        <div>
+        <Container>
             <Header></Header>
             <Container>
                 <Row>
@@ -28,7 +29,7 @@ const Main = () => {
 
             </Container>
             <Footer></Footer>
-        </div>
+        </Container>
     );
 };
 
