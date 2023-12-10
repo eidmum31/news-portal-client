@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, ListGroup } from 'react-bootstrap';
-import { FaGoogle, FaGithub, FaFacebookF, FaTwitter ,FaInstagram  } from 'react-icons/fa';
+import { FaGoogle, FaGithub, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 import QZone from '../QZone/QZone';
-
+import './RightNav.css'
 const RightNav = () => {
     return (
         <div>
@@ -16,18 +16,25 @@ const RightNav = () => {
                 <h4>Find Us On</h4>
                 <ListGroup as="ul">
                     <ListGroup.Item as="li">
-                        <FaFacebookF /> <span className='ms-2 my-auto'>Facebook</span> 
+                        <FaFacebookF /> <span className='ms-2 my-auto'>Facebook</span>
                     </ListGroup.Item>
                     <ListGroup.Item as="li">
                         <FaTwitter /><span className='ms-2 my-auto'>Twitter</span>
                     </ListGroup.Item>
                     <ListGroup.Item as="li">
-                       <FaInstagram /> <span className='ms-2 my-auto'>Instragam</span>
+                        <FaInstagram /> <span className='ms-2 my-auto'>Instragam</span>
                     </ListGroup.Item>
 
                 </ListGroup>
             </div>
             <QZone></QZone>
+            <div className='advertise text-light text-center mt-5 d-flex flex-column justify-content-center align-items-center'>
+                <div className=''>
+                    <h4 className=''>Create an Amazing Newspaper</h4>
+                    <p>Discover thousands of options, easy to customize layouts, one-click to import demo and much more.</p>
+                    <Button variant="danger">Danger</Button>
+                </div>
+            </div>
         </div>
     );
 };
