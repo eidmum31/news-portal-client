@@ -4,7 +4,7 @@ import './Header.css'
 import moment from 'moment';
 import { Button, Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
-import user from '../../../assets/user.png';
+
 import { Link } from 'react-router-dom';
 const Header = () => {
 
@@ -24,25 +24,7 @@ const Header = () => {
                 </Marquee>
 
             </div>
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary my-3" data-bs-theme="light">
-                <Container>
-                    
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="mx-auto">
-                            <Nav.Link href="#features"><Link className='link-underline-light text-dark' to="/">Home</Link></Nav.Link>
-                            <Nav.Link href="#pricing"><Link className='link-underline-light text-dark' to='/about'>About</Link></Nav.Link>
-                            <Nav.Link href="#pricing"><Link className='link-underline-light text-dark' to='/career'>Career</Link></Nav.Link>
-                            
-                     
-                        </Nav>
-                        <Nav>
-                            <img className='profile' src={user} alt="" />
-                            <Button variant="dark">Login</Button>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+
         </div>
     );
 };
